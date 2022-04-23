@@ -12,6 +12,7 @@ namespace ClasesPA.Models
         public int CourseId { get; set; }
         public int StudentId {get; set;}
 
+        //permite accede a la información
         public Course Course { get; set; }
 
         public Students Student { get; set; }

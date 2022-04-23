@@ -1,4 +1,5 @@
 ﻿using ClasesPA.Models;
+using ClasesPA.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,6 +7,8 @@ namespace ClasesPA.Controllers
 {
     public class HomeController : Controller
     {
+        private IEnrrollements _enrrollements;
+         
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
